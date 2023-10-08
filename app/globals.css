@@ -1,0 +1,73 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.heading {
+  width: 100%;
+  /* height: 10%; */
+  background-color: black;
+  color: white;
+}
+.heading h1 {
+  font-size: 3vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+form {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 6vw;
+}
+form input {
+  padding: 1.3vh 3vw;
+  border: 2px solid black;
+  text-align: center;
+}
+form button {
+  padding: 2vh 2vw;
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.tasks {
+  /* padding: 3vw; */
+  /* background-color: gray; */
+  /* font-size: 3vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 4vw 0; */
+}
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 7vw;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  form input {
+    padding: 2vh 3vw;
+    /* font-size: 1vw; */
+    margin-bottom: 4vh;
+  }
+  form button {
+    /* padding: 0 0; */
+    padding: 0 2vw;
+
+    /* border-spacing-3 py-2 px-2  */
+  }
+}
